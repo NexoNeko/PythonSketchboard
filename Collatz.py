@@ -1,5 +1,4 @@
 def collatz(number):
-""" Calculates the collatz sequence of a given number """
     while (True):
         if number <= 1:
             break;
@@ -10,4 +9,7 @@ def collatz(number):
         print(str(number))
 
 print('Enter number:')
-collatz(int(input()))
+try:
+    collatz(int(input()))
+except ValueError:
+    print('Invalid value, please type-in numbers.')
