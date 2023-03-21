@@ -1,4 +1,5 @@
 def collatz(number):
+""" Calculates the collatz sequence of a given number """
     while (True):
         if number <= 1:
             break;
